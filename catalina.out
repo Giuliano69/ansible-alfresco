@@ -1,0 +1,622 @@
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+08-Feb-2021 21:17:17.577 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.41
+08-Feb-2021 21:17:17.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 3 2020 11:43:00 UTC
+08-Feb-2021 21:17:17.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.41.0
+08-Feb-2021 21:17:17.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+08-Feb-2021 21:17:17.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.4.0-1028-raspi
+08-Feb-2021 21:17:17.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+08-Feb-2021 21:17:17.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-arm64
+08-Feb-2021 21:17:17.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.9.1+1-Ubuntu-0ubuntu1.20.04
+08-Feb-2021 21:17:17.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+08-Feb-2021 21:17:17.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /opt/alfresco/apache-tomcat-9.0.41
+08-Feb-2021 21:17:17.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /opt/alfresco/apache-tomcat-9.0.41
+08-Feb-2021 21:17:17.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Feb-2021 21:17:17.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Feb-2021 21:17:17.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Feb-2021 21:17:17.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/opt/alfresco/tomcat/conf/logging.properties
+08-Feb-2021 21:17:17.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Feb-2021 21:17:17.623 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xms512M
+08-Feb-2021 21:17:17.624 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx15250M
+08-Feb-2021 21:17:17.624 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -XX:+DisableExplicitGC
+08-Feb-2021 21:17:17.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -XX:+UseConcMarkSweepGC
+08-Feb-2021 21:17:17.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.awt.headless=true
+08-Feb-2021 21:17:17.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dalfresco.home=/opt/alfresco
+08-Feb-2021 21:17:17.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -XX:ReservedCodeCacheSize=128m
+08-Feb-2021 21:17:17.628 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote
+08-Feb-2021 21:17:17.629 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/opt/alfresco/temp
+08-Feb-2021 21:17:17.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Feb-2021 21:17:17.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Feb-2021 21:17:17.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+08-Feb-2021 21:17:17.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Feb-2021 21:17:17.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/opt/alfresco/tomcat
+08-Feb-2021 21:17:17.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/opt/alfresco/tomcat
+08-Feb-2021 21:17:17.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/opt/alfresco/temp
+08-Feb-2021 21:17:17.642 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/opt/alfresco/common/lib::/usr/java/packages/lib:/usr/lib/aarch64-linux-gnu/jni:/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+08-Feb-2021 21:17:19.311 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Feb-2021 21:17:19.672 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-127.0.0.1-8009"]
+08-Feb-2021 21:17:19.679 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [3176] milliseconds
+08-Feb-2021 21:17:20.221 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Feb-2021 21:17:20.224 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.41]
+08-Feb-2021 21:17:20.255 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/alfresco/apache-tomcat-9.0.41/conf/Catalina/localhost/share.xml]
+08-Feb-2021 21:17:28.492 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/inline-edit.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.496 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/discussions-createtopic.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.500 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/blog-postedit.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.505 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/2-columns.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.509 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/dashboard-2-columns-wide-right.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.514 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/share-hybrid-remote-template.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.518 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/redirect.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.522 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/site-groups.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.527 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/site-index.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.531 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/2-columns-narrow-right.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.535 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/documentlibrary.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.539 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/customise-user-dashboard.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.543 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/workflow-details.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.547 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/create-content.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.551 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/user-cloud-auth.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.556 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/share-template.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.560 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/dashboard-4-columns.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.565 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/start-workflow.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.569 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/site-members.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.574 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/discussions-topicview.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.578 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/add-users.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.582 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/user-profile.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.587 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/sharedfiles.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.591 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/user-content.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.595 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/calendar.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.600 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/template-instances/add-groups.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.611 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/extensions/debug-disabler-extension.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.615 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/extensions/debug-enabler-extension.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.620 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/chrome/slingshot-region-chrome.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.625 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/themes/hcBlack.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.629 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/themes/greenTheme.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.633 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/themes/lightTheme.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.637 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/themes/default.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.640 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/themes/gdocs.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.643 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/themes/yellowTheme.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.648 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/people-finder.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.651 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/blog-postlist.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.654 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/rule-edit.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.657 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/discussions-topiclist.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.660 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/myfiles.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.663 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/edit-metadata.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.666 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/wiki-page.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.669 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/repository.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.672 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/document-details.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.675 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/manage-permissions.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.678 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/invite.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.681 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/user-notifications.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.684 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/wiki.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.687 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/task-edit.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.690 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/links-view.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.693 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/search.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.696 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/message.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.698 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/data-lists.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.701 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/links.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.703 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/site-redirect.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.706 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/advsearch.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.709 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/sites-console.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.711 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/wiki-create.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.714 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/user-sites.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.717 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/hrp.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.719 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/reject-invite.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.721 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/following.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.724 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/slingshot-logout.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.727 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/pending-invites.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.730 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/webview-default.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.732 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/geographic-map.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.735 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/admin-console.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.737 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/followers.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.739 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/quickshare.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.742 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/folder-rules.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.744 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/links-linkedit.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.746 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/user-trashcan.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.749 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/task-details.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.755 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/customise-site-dashboard.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.757 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/dp.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.762 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/quickshare-redirect.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.764 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/tag-management.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.767 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/accept-invite.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:28.769 WARNING [main] org.apache.catalina.webresources.Cache.getResource Unable to add the resource at [/WEB-INF/classes/alfresco/site-data/pages/folder-details.xml] to the cache for web application [/share] because there was insufficient free space available after evicting expired cache entries - consider increasing the maximum size of the cache
+08-Feb-2021 21:17:43.012 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-02-08 21:18:16,241  INFO  [extensions.webscripts.TemplateProcessorRegistry] [main] Registered template processor freemarker for extension ftl
+ 2021-02-08 21:18:16,269  INFO  [extensions.webscripts.ScriptProcessorRegistry] [main] Registered script processor javascript for extension js
+ 2021-02-08 21:18:16,271  INFO  [extensions.webscripts.TemplateProcessorRegistry] [main] Registered template processor freemarker for extension ftl
+ 2021-02-08 21:18:16,280  INFO  [extensions.webscripts.ScriptProcessorRegistry] [main] Registered script processor javascript for extension js
+ 2021-02-08 21:18:23,615  INFO  [extensions.webscripts.DeclarativeRegistry] [main] Registered 392 Web Scripts (+0 failed), 410 URLs
+ 2021-02-08 21:18:23,637  INFO  [extensions.webscripts.DeclarativeRegistry] [main] Registered 8 Package Description Documents (+0 failed) 
+ 2021-02-08 21:18:23,639  INFO  [extensions.webscripts.DeclarativeRegistry] [main] Registered 0 Schema Description Documents (+0 failed) 
+ 2021-02-08 21:18:24,022  INFO  [extensions.webscripts.AbstractRuntimeContainer] [main] Initialised Surf Container Web Script Container (in 7727.8984ms)
+ 2021-02-08 21:18:24,320  INFO  [extensions.webscripts.TemplateProcessorRegistry] [main] Registered template processor freemarker for extension ftl
+ 2021-02-08 21:18:24,325  INFO  [extensions.webscripts.ScriptProcessorRegistry] [main] Registered script processor javascript for extension js
+ 08-Feb-2021 21:18:25.570 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/alfresco/apache-tomcat-9.0.41/conf/Catalina/localhost/share.xml] has finished in [65,312] ms
+08-Feb-2021 21:18:25.571 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/alfresco/apache-tomcat-9.0.41/conf/Catalina/localhost/alfresco.xml]
+Feb 08, 2021 9:18:58 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Feb 08, 2021 9:18:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+Feb 08, 2021 9:18:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+2021-02-08 21:19:36,953  WARN  [heartbeat.datasender.HBDataSenderServiceBuilder] [main] Setting the Heartbeat sender cron with property 'heartbeat.sender.cronExpression' is no longer supported.
+2021-02-08 21:19:37,566  INFO  [domain.schema.SchemaBootstrap] [main] Ignoring script patch (post-Hibernate): patch.db-V4.2-metadata-query-indexes
+2021-02-08 21:19:37,566  INFO  [domain.schema.SchemaBootstrap] [main] Ignoring script patch (post-Hibernate): patch.db-V5.1-metadata-query-indexes
+2021-02-08 21:19:37,567  INFO  [domain.schema.SchemaBootstrap] [main] Ignoring script patch (post-Hibernate): patch.db-V5.2-remove-jbpm-tables-from-db
+2021-02-08 21:19:38,432  INFO  [alfresco.repo.admin] [main] Using database URL 'jdbc:postgresql://127.0.0.1:5432/alfresco' with user 'alfresco'.
+2021-02-08 21:19:38,433  INFO  [alfresco.repo.admin] [main] Connected to database PostgreSQL version 12.5 (Ubuntu 12.5-0ubuntu0.20.04.1)
+2021-02-08 21:19:59,425  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Starting 'Authentication' subsystem, ID: [Authentication, managed, alfrescoNtlm1]
+2021-02-08 21:19:59,734  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Startup of 'Authentication' subsystem, ID: [Authentication, managed, alfrescoNtlm1] complete
+2021-02-08 21:20:07,561  INFO  [extensions.webscripts.TemplateProcessorRegistry] [main] Registered template processor Repository Template Processor for extension ftl
+2021-02-08 21:20:07,574  INFO  [extensions.webscripts.ScriptProcessorRegistry] [main] Registered script processor Repository Script Processor for extension js
+2021-02-08 21:20:15,911  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Starting 'ContentStore' subsystem, ID: [ContentStore, managed, unencrypted]
+2021-02-08 21:20:16,093  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Startup of 'ContentStore' subsystem, ID: [ContentStore, managed, unencrypted] complete
+2021-02-08 21:20:16,319  INFO  [domain.schema.SchemaBootstrap] [main] Connecting to database: jdbc:postgresql://127.0.0.1:5432/alfresco, UserName=alfresco, PostgreSQL JDBC Driver
+2021-02-08 21:20:16,320  INFO  [domain.schema.SchemaBootstrap] [main] Schema managed by database dialect org.alfresco.repo.domain.dialect.PostgreSQLDialect.
+2021-02-08 21:20:16,570  INFO  [domain.schema.SchemaBootstrap] [main] Applied patches detected: 223
+2021-02-08 21:20:17,004  INFO  [domain.schema.SchemaBootstrap] [main] Checking and patching Alfresco tables took 433 ms
+2021-02-08 21:20:17,034  INFO  [domain.schema.SchemaBootstrap] [main] Activiti tables need to be checked for patches
+2021-02-08 21:20:17,310  INFO  [domain.schema.SchemaBootstrap] [main] Checking and patching Activiti tables took 275 ms
+2021-02-08 21:20:17,599  INFO  [domain.schema.SchemaBootstrap] [main] Checking that all patches have been applied took 288 ms
+2021-02-08 21:20:17,600  INFO  [domain.schema.SchemaBootstrap] [main] Updating the DB schema took 1270 ms
+2021-02-08 21:20:17,605  INFO  [domain.schema.SchemaBootstrap] [main] No changes were made to the schema.
+2021-02-08 21:20:21,270  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Starting 'thirdparty' subsystem, ID: [thirdparty, default]
+2021-02-08 21:20:21,431  ERROR [transform.pdfrenderer.AlfrescoPdfRendererContentTransformerWorker] [main] Legacy Alfresco PDF Renderer is not available for transformations. Execution result:    os:         Linux   command:    /opt/alfresco/common/alfresco-pdf-renderer/alfresco-pdf-renderer --version   succeeded:  false   exit code:  1   out:           err:        Cannot run program "/opt/alfresco/common/alfresco-pdf-renderer/alfresco-pdf-renderer": error=20, Not a directory
+2021-02-08 21:20:21,848  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Startup of 'thirdparty' subsystem, ID: [thirdparty, default] complete
+2021-02-08 21:20:21,849  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Starting 'OOoJodconverter' subsystem, ID: [OOoJodconverter, default]
+Feb 08, 2021 9:20:22 PM org.artofsolving.jodconverter.office.ProcessPoolOfficeManager <init>
+INFO: ProcessManager implementation is LinuxProcessManager
+Feb 08, 2021 9:20:22 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: Using original OpenOffice command: [/usr/lib/libreoffice/program/soffice.bin, -accept=socket,host=127.0.0.1,port=8100;urp;, -env:UserInstallation=file:///opt/alfresco/temp/.jodconverter_socket_host-127.0.0.1_port-8100, -headless, -nocrashreport, -nodefault, -nofirststartwizard, -nolockcheck, -nologo, -norestore]
+Feb 08, 2021 9:20:22 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString 'socket,host=127.0.0.1,port=8100,tcpNoDelay=1' and profileDir '/opt/alfresco/temp/.jodconverter_socket_host-127.0.0.1_port-8100'
+Feb 08, 2021 9:20:22 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process; pid = 2910
+Feb 08, 2021 9:20:38 PM org.artofsolving.jodconverter.office.ManagedOfficeProcess$6 attempt
+WARNING: office process died with exit code 81; restarting it
+Feb 08, 2021 9:20:38 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: Using original OpenOffice command: [/usr/lib/libreoffice/program/soffice.bin, -accept=socket,host=127.0.0.1,port=8100;urp;, -env:UserInstallation=file:///opt/alfresco/temp/.jodconverter_socket_host-127.0.0.1_port-8100, -headless, -nocrashreport, -nodefault, -nofirststartwizard, -nolockcheck, -nologo, -norestore]
+Feb 08, 2021 9:20:38 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: starting process with acceptString 'socket,host=127.0.0.1,port=8100,tcpNoDelay=1' and profileDir '/opt/alfresco/temp/.jodconverter_socket_host-127.0.0.1_port-8100'
+Feb 08, 2021 9:20:38 PM org.artofsolving.jodconverter.office.OfficeProcess start
+INFO: started process; pid = 2921
+Feb 08, 2021 9:20:39 PM org.artofsolving.jodconverter.office.OfficeConnection connect
+INFO: connected: 'socket,host=127.0.0.1,port=8100,tcpNoDelay=1'
+2021-02-08 21:20:40,064  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Startup of 'OOoJodconverter' subsystem, ID: [OOoJodconverter, default] complete
+2021-02-08 21:20:40,071  INFO  [repo.admin.ConfigurationChecker] [main] The root data directory ('dir.root') is: /opt/alfresco/alf_data
+2021-02-08 21:20:40,135  INFO  [admin.patch.PatchExecuter] [main] Checking for patches to apply ...
+2021-02-08 21:20:42,019  INFO  [admin.patch.PatchExecuter] [main] No patches were required.
+2021-02-08 21:20:42,094  INFO  [repo.module.ModuleServiceImpl] [main] Found 2 module package(s).
+2021-02-08 21:20:42,273  INFO  [repo.module.ModuleServiceImpl] [main] Starting module 'alfresco-share-services' version 6.2.0.
+2021-02-08 21:20:42,379  INFO  [repo.module.ModuleServiceImpl] [main] Starting module 'alfresco-trashcan-cleaner' version 2.3.
+2021-02-08 21:20:42,445  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Starting 'fileServers' subsystem, ID: [fileServers, default]
+2021-02-08 21:20:43,765  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Startup of 'fileServers' subsystem, ID: [fileServers, default] complete
+2021-02-08 21:20:43,766  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Starting 'imap' subsystem, ID: [imap, default]
+2021-02-08 21:20:44,201  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Startup of 'imap' subsystem, ID: [imap, default] complete
+2021-02-08 21:20:44,202  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Starting 'email' subsystem, ID: [email, outbound]
+2021-02-08 21:20:45,803  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Startup of 'email' subsystem, ID: [email, outbound] complete
+2021-02-08 21:20:45,804  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Starting 'email' subsystem, ID: [email, inbound]
+2021-02-08 21:20:45,999  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Startup of 'email' subsystem, ID: [email, inbound] complete
+2021-02-08 21:20:46,000  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Starting 'Subscriptions' subsystem, ID: [Subscriptions, default]
+2021-02-08 21:20:46,064  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Startup of 'Subscriptions' subsystem, ID: [Subscriptions, default] complete
+2021-02-08 21:20:46,163  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Starting 'Synchronization' subsystem, ID: [Synchronization, default]
+2021-02-08 21:20:46,332  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Starting 'sysAdmin' subsystem, ID: [sysAdmin, default]
+2021-02-08 21:20:46,401  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Startup of 'sysAdmin' subsystem, ID: [sysAdmin, default] complete
+2021-02-08 21:20:46,800  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Startup of 'Synchronization' subsystem, ID: [Synchronization, default] complete
+2021-02-08 21:20:46,954  INFO  [service.descriptor.DescriptorService] [main] Alfresco JVM - v11.0.9.1+1-Ubuntu-0ubuntu1.20.04; maximum heap size 15216.750MB
+2021-02-08 21:20:46,955  INFO  [service.descriptor.DescriptorService] [main] Server Mode :UNKNOWN
+2021-02-08 21:20:46,972  INFO  [service.descriptor.DescriptorService] [main] Alfresco Content Services started (Community). Current version: 6.2.0 (rb65251d6-b368) schema 13,001. Originally installed version: 6.2.0 (rb65251d6-b368) schema 13,001.
+2021-02-08 21:20:47,011  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Starting 'ActivitiesFeed' subsystem, ID: [ActivitiesFeed, default]
+2021-02-08 21:20:48,148  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Startup of 'ActivitiesFeed' subsystem, ID: [ActivitiesFeed, default] complete
+2021-02-08 21:20:48,149  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Starting 'Replication' subsystem, ID: [Replication, default]
+2021-02-08 21:20:48,200  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Startup of 'Replication' subsystem, ID: [Replication, default] complete
+2021-02-08 21:20:54,510  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Starting 'Messaging' subsystem, ID: [Messaging, default]
+2021-02-08 21:21:02,680  INFO  [management.subsystems.ChildApplicationContextFactory] [main] Startup of 'Messaging' subsystem, ID: [Messaging, default] complete
+2021-02-08 21:21:14,947  INFO  [extensions.webscripts.DeclarativeRegistry] [asynchronouslyRefreshedCacheThreadPool1] Registered 374 Web Scripts (+0 failed), 518 URLs
+2021-02-08 21:21:14,952  INFO  [extensions.webscripts.DeclarativeRegistry] [asynchronouslyRefreshedCacheThreadPool1] Registered 1 Package Description Documents (+0 failed) 
+2021-02-08 21:21:14,953  INFO  [extensions.webscripts.DeclarativeRegistry] [asynchronouslyRefreshedCacheThreadPool1] Registered 0 Schema Description Documents (+0 failed) 
+2021-02-08 21:21:21,007  INFO  [extensions.webscripts.DeclarativeRegistry] [main] Registered 374 Web Scripts (+0 failed), 518 URLs
+2021-02-08 21:21:21,008  INFO  [extensions.webscripts.DeclarativeRegistry] [main] Registered 1 Package Description Documents (+0 failed) 
+2021-02-08 21:21:21,008  INFO  [extensions.webscripts.DeclarativeRegistry] [main] Registered 0 Schema Description Documents (+0 failed) 
+2021-02-08 21:21:21,024  INFO  [extensions.webscripts.AbstractRuntimeContainer] [main] Initialised Repository Web Script Container (in 17151.383ms)
+2021-02-08 21:21:21,099  INFO  [extensions.webscripts.TemplateProcessorRegistry] [main] Registered template processor freemarker for extension ftl
+2021-02-08 21:21:21,109  INFO  [extensions.webscripts.ScriptProcessorRegistry] [main] Registered script processor javascript for extension js
+2021-02-08 21:21:26,393  INFO  [extensions.webscripts.DeclarativeRegistry] [asynchronouslyRefreshedCacheThreadPool1] Registered 374 Web Scripts (+0 failed), 518 URLs
+2021-02-08 21:21:26,393  INFO  [extensions.webscripts.DeclarativeRegistry] [asynchronouslyRefreshedCacheThreadPool1] Registered 1 Package Description Documents (+0 failed) 
+2021-02-08 21:21:26,393  INFO  [extensions.webscripts.DeclarativeRegistry] [asynchronouslyRefreshedCacheThreadPool1] Registered 0 Schema Description Documents (+0 failed) 
+2021-02-08 21:21:26,675  INFO  [extensions.webscripts.DeclarativeRegistry] [asynchronouslyRefreshedCacheThreadPool1] Registered 14 Web Scripts (+0 failed), 103 URLs
+2021-02-08 21:21:26,676  INFO  [extensions.webscripts.DeclarativeRegistry] [asynchronouslyRefreshedCacheThreadPool1] Registered 0 Package Description Documents (+0 failed) 
+2021-02-08 21:21:26,676  INFO  [extensions.webscripts.DeclarativeRegistry] [asynchronouslyRefreshedCacheThreadPool1] Registered 0 Schema Description Documents (+0 failed) 
+2021-02-08 21:21:26,852  INFO  [extensions.webscripts.DeclarativeRegistry] [main] Registered 14 Web Scripts (+0 failed), 103 URLs
+2021-02-08 21:21:26,852  INFO  [extensions.webscripts.DeclarativeRegistry] [main] Registered 0 Package Description Documents (+0 failed) 
+2021-02-08 21:21:26,852  INFO  [extensions.webscripts.DeclarativeRegistry] [main] Registered 0 Schema Description Documents (+0 failed) 
+2021-02-08 21:21:26,870  INFO  [extensions.webscripts.AbstractRuntimeContainer] [main] Initialised Public Api Web Script Container (in 5704.5713ms)
+2021-02-08 21:21:26,965  INFO  [extensions.webscripts.DeclarativeRegistry] [asynchronouslyRefreshedCacheThreadPool1] Registered 14 Web Scripts (+0 failed), 103 URLs
+2021-02-08 21:21:26,965  INFO  [extensions.webscripts.DeclarativeRegistry] [asynchronouslyRefreshedCacheThreadPool1] Registered 0 Package Description Documents (+0 failed) 
+2021-02-08 21:21:26,966  INFO  [extensions.webscripts.DeclarativeRegistry] [asynchronouslyRefreshedCacheThreadPool1] Registered 0 Schema Description Documents (+0 failed) 
+2021-02-08 21:21:27,407  WARN  [scripts.servlet.X509ServletFilterBase] [main] clientAuth does not appear to be set for Tomcat. clientAuth must be set to 'want' for X509 Authentication
+2021-02-08 21:21:27,408  WARN  [scripts.servlet.X509ServletFilterBase] [main] Attempting to set clientAuth=want through JMX...
+2021-02-08 21:21:27,427  WARN  [scripts.servlet.X509ServletFilterBase] [main] Unable to set clientAuth=want through JMX.
+08-Feb-2021 21:21:38.510 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/alfresco/apache-tomcat-9.0.41/conf/Catalina/localhost/alfresco.xml] has finished in [192,939] ms
+08-Feb-2021 21:21:38.526 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/opt/alfresco/apache-tomcat-9.0.41/webapps/ROOT.war]
+08-Feb-2021 21:21:38.538 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Context] failed to set property [debug] to [100]
+08-Feb-2021 21:21:38.959 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Feb-2021 21:21:38.974 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/opt/alfresco/apache-tomcat-9.0.41/webapps/ROOT.war] has finished in [447] ms
+08-Feb-2021 21:21:38.980 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/opt/alfresco/apache-tomcat-9.0.41/webapps/_vti_bin.war]
+08-Feb-2021 21:21:39.563 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+08-Feb-2021 21:21:39.577 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/opt/alfresco/apache-tomcat-9.0.41/webapps/_vti_bin.war] has finished in [596] ms
+08-Feb-2021 21:21:39.595 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Feb-2021 21:21:39.652 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to start component [Connector[AJP/1.3-8009]]
+	org.apache.catalina.LifecycleException: Protocol handler start failed
+		at org.apache.catalina.connector.Connector.startInternal(Connector.java:1067)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:451)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.lang.IllegalArgumentException: The AJP Connector is configured with secretRequired="true" but the secret attribute is either null or "". This combination is not valid.
+		at org.apache.coyote.ajp.AbstractAjpProtocol.start(AbstractAjpProtocol.java:270)
+		at org.apache.catalina.connector.Connector.startInternal(Connector.java:1064)
+		... 12 more
+08-Feb-2021 21:21:39.659 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [259979] milliseconds
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.ibatis.reflection.Reflector (file:/opt/alfresco/apache-tomcat-9.0.41/webapps/alfresco/WEB-INF/lib/mybatis-3.3.0.jar) to method java.util.HashMap.hash(java.lang.Object)
+WARNING: Please consider reporting this to the maintainers of org.apache.ibatis.reflection.Reflector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2021-02-08 21:21:56,651  INFO  [web.site.EditionInterceptor] [http-nio-8080-exec-3] Successfully retrieved license information from Alfresco.
+ 2021-02-08 21:22:42,214  INFO  [web.scripts.ImapServerStatus] [http-nio-8080-exec-3] Successfully retrieved IMAP server status from Alfresco: disabled
+ 2021-02-08 21:23:07,329  INFO  [management.subsystems.ChildApplicationContextFactory] [http-nio-8080-exec-1] Starting 'Search' subsystem, ID: [Search, managed, solr6]
+2021-02-08 21:23:08,690  INFO  [management.subsystems.ChildApplicationContextFactory] [http-nio-8080-exec-1] Startup of 'Search' subsystem, ID: [Search, managed, solr6] complete
+2021-02-08 21:23:11,186  ERROR [extensions.webscripts.AbstractRuntime] [http-nio-8080-exec-1] Exception from executeScript: 01080002 Wrapped Exception (with status template): 01080020 Failed to execute script 'classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js': 01080019 Failed to execute search:  +@cm\:modified:[2021\-2\-1T00\:00\:00.000 TO 2021\-2\-8T23\:59\:59.999] +@cm\:modifier:"admin" +TYPE:"cm:content" -TYPE:"cm:systemfolder" -TYPE:"fm:forums" -TYPE:"fm:forum" -TYPE:"fm:topic" -TYPE:"fm:post" +(TYPE:"content" OR TYPE:"app:filelink" OR TYPE:"folder")
+org.springframework.extensions.webscripts.WebScriptException: 01080002 Wrapped Exception (with status template): 01080020 Failed to execute script 'classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js': 01080019 Failed to execute search:  +@cm\:modified:[2021\-2\-1T00\:00\:00.000 TO 2021\-2\-8T23\:59\:59.999] +@cm\:modifier:"admin" +TYPE:"cm:content" -TYPE:"cm:systemfolder" -TYPE:"fm:forums" -TYPE:"fm:forum" -TYPE:"fm:topic" -TYPE:"fm:post" +(TYPE:"content" OR TYPE:"app:filelink" OR TYPE:"folder")
+	at org.springframework.extensions.webscripts.AbstractWebScript.createStatusException(AbstractWebScript.java:1139)
+	at org.springframework.extensions.webscripts.DeclarativeWebScript.execute(DeclarativeWebScript.java:171)
+	at org.alfresco.repo.web.scripts.RepositoryContainer$3.execute(RepositoryContainer.java:519)
+	at org.alfresco.repo.transaction.RetryingTransactionHelper.doInTransaction(RetryingTransactionHelper.java:450)
+	at org.alfresco.repo.web.scripts.RepositoryContainer.transactionedExecute(RepositoryContainer.java:595)
+	at org.alfresco.repo.web.scripts.RepositoryContainer.transactionedExecuteAs(RepositoryContainer.java:664)
+	at org.alfresco.repo.web.scripts.RepositoryContainer.executeScriptInternal(RepositoryContainer.java:435)
+	at org.alfresco.repo.web.scripts.RepositoryContainer.executeScript(RepositoryContainer.java:315)
+	at org.springframework.extensions.webscripts.AbstractRuntime.executeScript(AbstractRuntime.java:399)
+	at org.springframework.extensions.webscripts.AbstractRuntime.executeScript(AbstractRuntime.java:210)
+	at org.springframework.extensions.webscripts.servlet.WebScriptServlet.service(WebScriptServlet.java:132)
+	at org.alfresco.repo.web.scripts.AlfrescoWebScriptServlet.service(AlfrescoWebScriptServlet.java:43)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.alfresco.web.app.servlet.GlobalLocalizationFilter.doFilter(GlobalLocalizationFilter.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.alfresco.web.app.servlet.ClearSecurityContextFilter.doFilter(ClearSecurityContextFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.alfresco.scripts.ScriptException: 01080020 Failed to execute script 'classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js': 01080019 Failed to execute search:  +@cm\:modified:[2021\-2\-1T00\:00\:00.000 TO 2021\-2\-8T23\:59\:59.999] +@cm\:modifier:"admin" +TYPE:"cm:content" -TYPE:"cm:systemfolder" -TYPE:"fm:forums" -TYPE:"fm:forum" -TYPE:"fm:topic" -TYPE:"fm:post" +(TYPE:"content" OR TYPE:"app:filelink" OR TYPE:"folder")
+	at org.alfresco.repo.jscript.RhinoScriptProcessor.execute(RhinoScriptProcessor.java:211)
+	at org.alfresco.repo.processor.ScriptServiceImpl.execute(ScriptServiceImpl.java:219)
+	at org.alfresco.repo.processor.ScriptServiceImpl.executeScript(ScriptServiceImpl.java:181)
+	at org.alfresco.repo.web.scripts.RepositoryScriptProcessor.executeScript(RepositoryScriptProcessor.java:109)
+	at org.springframework.extensions.webscripts.AbstractWebScript.executeScript(AbstractWebScript.java:1376)
+	at org.springframework.extensions.webscripts.DeclarativeWebScript.execute(DeclarativeWebScript.java:86)
+	... 39 more
+Caused by: org.alfresco.error.AlfrescoRuntimeException: 01080019 Failed to execute search:  +@cm\:modified:[2021\-2\-1T00\:00\:00.000 TO 2021\-2\-8T23\:59\:59.999] +@cm\:modifier:"admin" +TYPE:"cm:content" -TYPE:"cm:systemfolder" -TYPE:"fm:forums" -TYPE:"fm:forum" -TYPE:"fm:topic" -TYPE:"fm:post" +(TYPE:"content" OR TYPE:"app:filelink" OR TYPE:"folder")
+	at org.alfresco.repo.jscript.Search.queryResultMeta(Search.java:1127)
+	at org.alfresco.repo.jscript.Search.queryResultSet(Search.java:819)
+	at org.alfresco.repo.jscript.Search.query(Search.java:560)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mozilla.javascript.MemberBox.invoke(MemberBox.java:138)
+	at org.mozilla.javascript.NativeJavaMethod.call(NativeJavaMethod.java:226)
+	at org.mozilla.javascript.optimizer.OptRuntime.call1(OptRuntime.java:45)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_documentlibrary_doclist_get_js_5._c_getDoclist_20(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js:1127)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_documentlibrary_doclist_get_js_5.call(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName0(OptRuntime.java:87)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_documentlibrary_doclist_get_js_5._c_script_0(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js:1352)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_documentlibrary_doclist_get_js_5.call(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js)
+	at org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:409)
+	at org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:3566)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_documentlibrary_doclist_get_js_5.call(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_documentlibrary_doclist_get_js_5.exec(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js)
+	at org.alfresco.repo.jscript.RhinoScriptProcessor.executeScriptImpl(RhinoScriptProcessor.java:509)
+	at org.alfresco.repo.jscript.RhinoScriptProcessor.execute(RhinoScriptProcessor.java:207)
+	... 44 more
+Caused by: org.alfresco.repo.search.impl.lucene.LuceneQueryParserException: 01080018 Request failed 500 /solr/alfresco/alfresco?wt=json&fl=DBID%2Cscore&rows=50&df=TEXT&start=0&locale=en_US&alternativeDic=DEFAULT_DICTIONARY&sort=%40cm%3Amodified+desc&fq=%7B%21afts%7DAUTHORITY_FILTER_FROM_JSON&fq=%7B%21afts%7DTENANT_FILTER_FROM_JSON
+	at org.alfresco.repo.search.impl.solr.AbstractSolrQueryHTTPClient.postQuery(AbstractSolrQueryHTTPClient.java:108)
+	at org.alfresco.repo.search.impl.solr.SolrQueryHTTPClient.postSolrQuery(SolrQueryHTTPClient.java:1115)
+	at org.alfresco.repo.search.impl.solr.SolrQueryHTTPClient.executeQuery(SolrQueryHTTPClient.java:582)
+	at org.alfresco.repo.search.impl.solr.SolrQueryLanguage.executeQuery(SolrQueryLanguage.java:52)
+	at org.alfresco.repo.search.impl.solr.SolrSearchService.query(SolrSearchService.java:354)
+	at org.alfresco.repo.search.SearcherComponent.query(SearcherComponent.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.alfresco.repo.management.subsystems.SubsystemProxyFactory$1.invoke(SubsystemProxyFactory.java:79)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy40.query(Unknown Source)
+	at org.alfresco.repo.search.impl.SearchServiceSubSystemDelegator.query(SearchServiceSubSystemDelegator.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at net.sf.acegisecurity.intercept.method.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.alfresco.repo.security.permissions.impl.ExceptionTranslatorMethodInterceptor.invoke(ExceptionTranslatorMethodInterceptor.java:53)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.alfresco.repo.audit.AuditMethodInterceptor.invoke(AuditMethodInterceptor.java:166)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:295)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy40.query(Unknown Source)
+	at org.alfresco.repo.jscript.Search.queryResultMeta(Search.java:1016)
+	... 64 more
+2021-02-08 21:23:48,550  ERROR [extensions.webscripts.AbstractRuntime] [http-nio-8080-exec-7] Exception from executeScript: 01080003 Wrapped Exception (with status template): 01080023 Failed to execute script 'classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js': 01080022 Failed to execute search: +PATH:"/app:company_home/st:sites/cm:montblanc/cm:documentLibrary//*" +@cm\:modified:[2021\-2\-1T00\:00\:00.000 TO 2021\-2\-8T23\:59\:59.999] +@cm\:modifier:"admin" +TYPE:"cm:content" -TYPE:"cm:systemfolder" -TYPE:"fm:forums" -TYPE:"fm:forum" -TYPE:"fm:topic" -TYPE:"fm:post" +(TYPE:"content" OR TYPE:"app:filelink" OR TYPE:"folder")
+org.springframework.extensions.webscripts.WebScriptException: 01080003 Wrapped Exception (with status template): 01080023 Failed to execute script 'classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js': 01080022 Failed to execute search: +PATH:"/app:company_home/st:sites/cm:montblanc/cm:documentLibrary//*" +@cm\:modified:[2021\-2\-1T00\:00\:00.000 TO 2021\-2\-8T23\:59\:59.999] +@cm\:modifier:"admin" +TYPE:"cm:content" -TYPE:"cm:systemfolder" -TYPE:"fm:forums" -TYPE:"fm:forum" -TYPE:"fm:topic" -TYPE:"fm:post" +(TYPE:"content" OR TYPE:"app:filelink" OR TYPE:"folder")
+	at org.springframework.extensions.webscripts.AbstractWebScript.createStatusException(AbstractWebScript.java:1139)
+	at org.springframework.extensions.webscripts.DeclarativeWebScript.execute(DeclarativeWebScript.java:171)
+	at org.alfresco.repo.web.scripts.RepositoryContainer$3.execute(RepositoryContainer.java:519)
+	at org.alfresco.repo.transaction.RetryingTransactionHelper.doInTransaction(RetryingTransactionHelper.java:450)
+	at org.alfresco.repo.web.scripts.RepositoryContainer.transactionedExecute(RepositoryContainer.java:595)
+	at org.alfresco.repo.web.scripts.RepositoryContainer.transactionedExecuteAs(RepositoryContainer.java:664)
+	at org.alfresco.repo.web.scripts.RepositoryContainer.executeScriptInternal(RepositoryContainer.java:435)
+	at org.alfresco.repo.web.scripts.RepositoryContainer.executeScript(RepositoryContainer.java:315)
+	at org.springframework.extensions.webscripts.AbstractRuntime.executeScript(AbstractRuntime.java:399)
+	at org.springframework.extensions.webscripts.AbstractRuntime.executeScript(AbstractRuntime.java:210)
+	at org.springframework.extensions.webscripts.servlet.WebScriptServlet.service(WebScriptServlet.java:132)
+	at org.alfresco.repo.web.scripts.AlfrescoWebScriptServlet.service(AlfrescoWebScriptServlet.java:43)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.alfresco.web.app.servlet.GlobalLocalizationFilter.doFilter(GlobalLocalizationFilter.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.alfresco.web.app.servlet.ClearSecurityContextFilter.doFilter(ClearSecurityContextFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.alfresco.scripts.ScriptException: 01080023 Failed to execute script 'classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js': 01080022 Failed to execute search: +PATH:"/app:company_home/st:sites/cm:montblanc/cm:documentLibrary//*" +@cm\:modified:[2021\-2\-1T00\:00\:00.000 TO 2021\-2\-8T23\:59\:59.999] +@cm\:modifier:"admin" +TYPE:"cm:content" -TYPE:"cm:systemfolder" -TYPE:"fm:forums" -TYPE:"fm:forum" -TYPE:"fm:topic" -TYPE:"fm:post" +(TYPE:"content" OR TYPE:"app:filelink" OR TYPE:"folder")
+	at org.alfresco.repo.jscript.RhinoScriptProcessor.execute(RhinoScriptProcessor.java:211)
+	at org.alfresco.repo.processor.ScriptServiceImpl.execute(ScriptServiceImpl.java:219)
+	at org.alfresco.repo.processor.ScriptServiceImpl.executeScript(ScriptServiceImpl.java:181)
+	at org.alfresco.repo.web.scripts.RepositoryScriptProcessor.executeScript(RepositoryScriptProcessor.java:109)
+	at org.springframework.extensions.webscripts.AbstractWebScript.executeScript(AbstractWebScript.java:1376)
+	at org.springframework.extensions.webscripts.DeclarativeWebScript.execute(DeclarativeWebScript.java:86)
+	... 39 more
+Caused by: org.alfresco.error.AlfrescoRuntimeException: 01080022 Failed to execute search: +PATH:"/app:company_home/st:sites/cm:montblanc/cm:documentLibrary//*" +@cm\:modified:[2021\-2\-1T00\:00\:00.000 TO 2021\-2\-8T23\:59\:59.999] +@cm\:modifier:"admin" +TYPE:"cm:content" -TYPE:"cm:systemfolder" -TYPE:"fm:forums" -TYPE:"fm:forum" -TYPE:"fm:topic" -TYPE:"fm:post" +(TYPE:"content" OR TYPE:"app:filelink" OR TYPE:"folder")
+	at org.alfresco.repo.jscript.Search.queryResultMeta(Search.java:1127)
+	at org.alfresco.repo.jscript.Search.queryResultSet(Search.java:819)
+	at org.alfresco.repo.jscript.Search.query(Search.java:560)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mozilla.javascript.MemberBox.invoke(MemberBox.java:138)
+	at org.mozilla.javascript.NativeJavaMethod.call(NativeJavaMethod.java:226)
+	at org.mozilla.javascript.optimizer.OptRuntime.call1(OptRuntime.java:45)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_documentlibrary_doclist_get_js_5._c_getDoclist_20(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js:1127)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_documentlibrary_doclist_get_js_5.call(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName0(OptRuntime.java:87)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_documentlibrary_doclist_get_js_5._c_script_0(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js:1352)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_documentlibrary_doclist_get_js_5.call(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js)
+	at org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:409)
+	at org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:3566)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_documentlibrary_doclist_get_js_5.call(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_documentlibrary_doclist_get_js_5.exec(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/documentlibrary/doclist.get.js)
+	at org.alfresco.repo.jscript.RhinoScriptProcessor.executeScriptImpl(RhinoScriptProcessor.java:509)
+	at org.alfresco.repo.jscript.RhinoScriptProcessor.execute(RhinoScriptProcessor.java:207)
+	... 44 more
+Caused by: org.alfresco.repo.search.impl.lucene.LuceneQueryParserException: 01080021 Request failed 500 /solr/alfresco/alfresco?wt=json&fl=DBID%2Cscore&rows=50&df=TEXT&start=0&locale=en_US&alternativeDic=DEFAULT_DICTIONARY&sort=%40cm%3Amodified+desc&fq=%7B%21afts%7DAUTHORITY_FILTER_FROM_JSON&fq=%7B%21afts%7DTENANT_FILTER_FROM_JSON
+	at org.alfresco.repo.search.impl.solr.AbstractSolrQueryHTTPClient.postQuery(AbstractSolrQueryHTTPClient.java:108)
+	at org.alfresco.repo.search.impl.solr.SolrQueryHTTPClient.postSolrQuery(SolrQueryHTTPClient.java:1115)
+	at org.alfresco.repo.search.impl.solr.SolrQueryHTTPClient.executeQuery(SolrQueryHTTPClient.java:582)
+	at org.alfresco.repo.search.impl.solr.SolrQueryLanguage.executeQuery(SolrQueryLanguage.java:52)
+	at org.alfresco.repo.search.impl.solr.SolrSearchService.query(SolrSearchService.java:354)
+	at org.alfresco.repo.search.SearcherComponent.query(SearcherComponent.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.alfresco.repo.management.subsystems.SubsystemProxyFactory$1.invoke(SubsystemProxyFactory.java:79)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy40.query(Unknown Source)
+	at org.alfresco.repo.search.impl.SearchServiceSubSystemDelegator.query(SearchServiceSubSystemDelegator.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at net.sf.acegisecurity.intercept.method.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.alfresco.repo.security.permissions.impl.ExceptionTranslatorMethodInterceptor.invoke(ExceptionTranslatorMethodInterceptor.java:53)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.alfresco.repo.audit.AuditMethodInterceptor.invoke(AuditMethodInterceptor.java:166)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:295)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy40.query(Unknown Source)
+	at org.alfresco.repo.jscript.Search.queryResultMeta(Search.java:1016)
+	... 64 more
+2021-02-08 21:24:18,230  ERROR [repo.site.SiteServiceImpl] [http-nio-8080-exec-3] LuceneQueryParserException with findSites()
+org.alfresco.repo.search.impl.lucene.LuceneQueryParserException: 01080027 Request failed 500 /solr/alfresco/afts?wt=json&fl=DBID%2Cscore&rows=5&df=TEXT&start=0&locale=en_US&alternativeDic=DEFAULT_DICTIONARY&fq=%7B%21afts%7DAUTHORITY_FILTER_FROM_JSON&fq=%7B%21afts%7DTENANT_FILTER_FROM_JSON
+	at org.alfresco.repo.search.impl.solr.AbstractSolrQueryHTTPClient.postQuery(AbstractSolrQueryHTTPClient.java:108)
+	at org.alfresco.repo.search.impl.solr.SolrQueryHTTPClient.postSolrQuery(SolrQueryHTTPClient.java:1115)
+	at org.alfresco.repo.search.impl.solr.SolrQueryHTTPClient.executeQuery(SolrQueryHTTPClient.java:582)
+	at org.alfresco.repo.search.impl.solr.SolrQueryLanguage.executeQuery(SolrQueryLanguage.java:52)
+	at org.alfresco.repo.search.impl.solr.DbOrIndexSwitchingQueryLanguage.executeQuery(DbOrIndexSwitchingQueryLanguage.java:217)
+	at org.alfresco.repo.search.impl.solr.SolrSearchService.query(SolrSearchService.java:354)
+	at org.alfresco.repo.search.SearcherComponent.query(SearcherComponent.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.alfresco.repo.management.subsystems.SubsystemProxyFactory$1.invoke(SubsystemProxyFactory.java:79)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy40.query(Unknown Source)
+	at org.alfresco.repo.search.impl.SearchServiceSubSystemDelegator.query(SearchServiceSubSystemDelegator.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at net.sf.acegisecurity.intercept.method.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.alfresco.repo.security.permissions.impl.ExceptionTranslatorMethodInterceptor.invoke(ExceptionTranslatorMethodInterceptor.java:53)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.alfresco.repo.audit.AuditMethodInterceptor.invoke(AuditMethodInterceptor.java:166)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:295)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy40.query(Unknown Source)
+	at org.alfresco.repo.site.SiteServiceImpl.findSites(SiteServiceImpl.java:957)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at net.sf.acegisecurity.intercept.method.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.alfresco.repo.security.permissions.impl.ExceptionTranslatorMethodInterceptor.invoke(ExceptionTranslatorMethodInterceptor.java:53)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.alfresco.repo.audit.AuditMethodInterceptor.invoke(AuditMethodInterceptor.java:166)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.alfresco.repo.transaction.CheckTransactionAdvice.invoke(CheckTransactionAdvice.java:54)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.alfresco.repo.transaction.RetryingTransactionAdvice$1.execute(RetryingTransactionAdvice.java:71)
+	at org.alfresco.repo.transaction.RetryingTransactionHelper.doInTransaction(RetryingTransactionHelper.java:450)
+	at org.alfresco.repo.transaction.RetryingTransactionAdvice.invoke(RetryingTransactionAdvice.java:74)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy129.findSites(Unknown Source)
+	at org.alfresco.repo.site.script.ScriptSiteService.findSites(ScriptSiteService.java:287)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mozilla.javascript.MemberBox.invoke(MemberBox.java:138)
+	at org.mozilla.javascript.NativeJavaMethod.call(NativeJavaMethod.java:226)
+	at org.mozilla.javascript.optimizer.OptRuntime.call2(OptRuntime.java:55)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_search_live_search_sites_get_js_12._c_getSiteResults_7(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/search/live-search-sites.get.js:267)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_search_live_search_sites_get_js_12.call(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/search/live-search-sites.get.js)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName(OptRuntime.java:76)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_search_live_search_sites_get_js_12._c_liveSearch_5(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/search/live-search-sites.get.js:161)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_search_live_search_sites_get_js_12.call(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/search/live-search-sites.get.js)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName(OptRuntime.java:76)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_search_live_search_sites_get_js_12._c_main_10(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/search/live-search-sites.get.js:308)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_search_live_search_sites_get_js_12.call(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/search/live-search-sites.get.js)
+	at org.mozilla.javascript.optimizer.OptRuntime.callName0(OptRuntime.java:87)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_search_live_search_sites_get_js_12._c_script_0(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/search/live-search-sites.get.js:311)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_search_live_search_sites_get_js_12.call(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/search/live-search-sites.get.js)
+	at org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:409)
+	at org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:3566)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_search_live_search_sites_get_js_12.call(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/search/live-search-sites.get.js)
+	at org.mozilla.javascript.gen.classpath__alfresco_templates_webscripts_org_alfresco_slingshot_search_live_search_sites_get_js_12.exec(classpath*:alfresco/templates/webscripts/org/alfresco/slingshot/search/live-search-sites.get.js)
+	at org.alfresco.repo.jscript.RhinoScriptProcessor.executeScriptImpl(RhinoScriptProcessor.java:509)
+	at org.alfresco.repo.jscript.RhinoScriptProcessor.execute(RhinoScriptProcessor.java:207)
+	at org.alfresco.repo.processor.ScriptServiceImpl.execute(ScriptServiceImpl.java:219)
+	at org.alfresco.repo.processor.ScriptServiceImpl.executeScript(ScriptServiceImpl.java:181)
+	at org.alfresco.repo.web.scripts.RepositoryScriptProcessor.executeScript(RepositoryScriptProcessor.java:109)
+	at org.springframework.extensions.webscripts.AbstractWebScript.executeScript(AbstractWebScript.java:1376)
+	at org.springframework.extensions.webscripts.DeclarativeWebScript.execute(DeclarativeWebScript.java:86)
+	at org.alfresco.repo.web.scripts.RepositoryContainer$3.execute(RepositoryContainer.java:519)
+	at org.alfresco.repo.transaction.RetryingTransactionHelper.doInTransaction(RetryingTransactionHelper.java:450)
+	at org.alfresco.repo.web.scripts.RepositoryContainer.transactionedExecute(RepositoryContainer.java:595)
+	at org.alfresco.repo.web.scripts.RepositoryContainer.transactionedExecuteAs(RepositoryContainer.java:664)
+	at org.alfresco.repo.web.scripts.RepositoryContainer.executeScriptInternal(RepositoryContainer.java:435)
+	at org.alfresco.repo.web.scripts.RepositoryContainer.executeScript(RepositoryContainer.java:315)
+	at org.springframework.extensions.webscripts.AbstractRuntime.executeScript(AbstractRuntime.java:399)
+	at org.springframework.extensions.webscripts.AbstractRuntime.executeScript(AbstractRuntime.java:210)
+	at org.springframework.extensions.webscripts.servlet.WebScriptServlet.service(WebScriptServlet.java:132)
+	at org.alfresco.repo.web.scripts.AlfrescoWebScriptServlet.service(AlfrescoWebScriptServlet.java:43)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.alfresco.web.app.servlet.GlobalLocalizationFilter.doFilter(GlobalLocalizationFilter.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.alfresco.web.app.servlet.ClearSecurityContextFilter.doFilter(ClearSecurityContextFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
